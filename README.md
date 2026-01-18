@@ -2,7 +2,10 @@
 
 Modern ve güvenli bir test sonuç takip sistemi. QR kod ile hızlı sonuç sorgulama ve entegre ürün satış modülü.
 
-## ✨ Özellikler
+## ✨ Tanıtım Videosu
+https://youtu.be/cu22xeB-0IU
+
+# ✨ Özellikler
 
 ### 📱 QR Test Paneli
 - **QR Kod ile Sonuç Sorgulama** - Kullanıcılar QR kodu okutarak test sonuçlarına anında ulaşır
