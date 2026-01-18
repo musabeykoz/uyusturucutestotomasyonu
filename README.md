@@ -131,14 +131,6 @@ cromtest/
 - ✅ Düzenli **veritabanı yedeği** alın
 - ⚠️ Debug modunu production'da **kapatın**
 
-## 🤝 Katkıda Bulunma
-
-Pull request'ler memnuniyetle karşılanır! Büyük değişiklikler için önce issue açarak tartışalım.
-
-## 📜 Lisans
-
-MIT License - Detaylar için LICENSE dosyasına bakın
-
 ## 📞 Destek
 
 Sorularınız için issue açabilir veya iletişime geçebilirsiniz.
