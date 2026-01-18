@@ -1,0 +1,15 @@
+# Log dosyalarına erişimi tamamen engelle
+Order Deny,Allow
+Deny from all
+
+# Apache 2.4+ için
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+
+# Hiçbir dosya türüne izin verme
+<FilesMatch ".*">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+

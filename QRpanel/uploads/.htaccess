@@ -1,0 +1,17 @@
+# Uploads klasöründe PHP çalıştırmayı engelle
+php_flag engine off
+
+# PHP dosyalarını metin olarak göster
+AddType text/plain .php .php3 .php4 .php5 .phtml .phps
+
+# Sadece görsel dosyalara izin ver
+<FilesMatch "\.(jpg|jpeg|png|gif|webp)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Diğer tüm dosyaları engelle
+<FilesMatch "\.php$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>

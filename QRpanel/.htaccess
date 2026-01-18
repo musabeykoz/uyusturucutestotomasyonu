@@ -1,0 +1,46 @@
+# CROMTEST - Apache Güvenlik Ayarları
+
+# PHP Hata Gösterimini Kapat (Production)
+php_flag display_errors Off
+php_flag display_startup_errors Off
+
+# Hassas Dosyaları Koru
+<FilesMatch "\.(env|log|sql|md|gitignore)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Config dosyalarına doğrudan erişimi engelle
+<FilesMatch "^(database|auth|security|session|logger|qr_generator)\.php$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+# Directory Listing'i Kapat
+Options -Indexes
+
+# Clickjacking Koruması
+Header always append X-Frame-Options SAMEORIGIN
+
+# XSS Koruması
+Header set X-XSS-Protection "1; mode=block"
+
+# MIME Sniffing Koruması
+Header set X-Content-Type-Options nosniff
+
+# Referrer Policy
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Content Security Policy (Temel)
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com https://chart.googleapis.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'self';"
+
+# HTTPS Yönlendirmesi (SSL varsa aktif edin)
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# PHP Execution'ı uploads klasöründe engelle
+<Directory "uploads">
+    php_flag engine off
+    AddType text/plain .php .php3 .php4 .php5 .phtml .phps
+</Directory>
