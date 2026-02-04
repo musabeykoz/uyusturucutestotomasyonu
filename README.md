@@ -65,7 +65,7 @@ define('DB_NAME', 'cromtest_db');
 
 **Admin Hesabı:**
 - Kullanıcı: `admin`
-- Şifre: `(database.sql'deki hash ile)`
+- Şifre: `admin123`
 
 **Operatör Hesabı:**
 - Kullanıcı: `operator`
@@ -136,7 +136,7 @@ cromtest/
 
 ## 📞 Destek
 
-Sorularınız için issue açabilir veya iletişime geçebilirsiniz.
+Sorularınız için iletişime geçebilirsiniz.
 
 ---
 
