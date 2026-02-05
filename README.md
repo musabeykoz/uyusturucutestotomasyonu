@@ -1,3 +1,4 @@
+TARİH: ARALIK 2025
 # 🧪 CromTest - QR Kodlu Test Yönetim Sistemi
 
 Modern ve güvenli bir test sonuç takip sistemi. QR kod ile hızlı sonuç sorgulama ve entegre ürün satış modülü.
