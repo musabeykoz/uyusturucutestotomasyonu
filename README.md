@@ -139,9 +139,15 @@ cromtest/
 
 Sorularınız için iletişime geçebilirsiniz.
 
----
+------------------------------------------
 
-**Not:** Bu sistem demo kullanıcı verileri ile gelir. Production'a geçmeden önce güvenlik incelemesi yapılması önerilir.
+GitHub: https://github.com/musabeykoz
 
-⭐ Projeyi beğendiyseniz yıldız vermeyi unutmayın!
+LinkedIn: https://linkedin.com/in/musabeykoz
+
+Web: https://musabeykoz.com
+
+⭐ Destek Ol
+
+Projeyi beğendiysen yıldız atmayı unutma ⭐ Bu, projeyi geliştirmem için büyük motivasyon sağlar!
 
