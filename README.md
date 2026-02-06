@@ -129,11 +129,7 @@ cromtest/
 
 ## ⚠️ Önemli Notlar
 
-- ✅ Production ortamında **HTTPS kullanın**
-- ✅ İlk girişte **şifreleri değiştirin**
 - ✅ `uploads/` ve `logs/` klasörlerine **yazma izni** verin
-- ✅ Düzenli **veritabanı yedeği** alın
-- ⚠️ Debug modunu production'da **kapatın**
 
 ## 📞 Destek
 
